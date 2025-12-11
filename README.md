@@ -1,6 +1,6 @@
 <img src="./public/screenshots/boolean-logo.png" width="20px">
 
-# BooRoad – Travel Companion App
+# BoolRoad – Travel Companion App
 
 ## #Mobile
 <img src="./public/screenshots/booroad_3.png" width="450px">
