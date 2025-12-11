@@ -3,7 +3,7 @@
 # BoolRoad – Travel Companion App
 
 ## #Mobile
-<img src="./public/screenshots/booroad_3.png" width="450px">
+<img src="./public/screenshots/boolroad_3.png" width="450px">
 <img src="./public/screenshots/booroad_4.png" width="450px">
 
 ## #Desktop
