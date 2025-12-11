@@ -1,0 +1,254 @@
+/*************************************************
+    GENERAL RULES CSS
+ *************************************************/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(52, 52, 52);
+}
+
+/*************************************************
+    NAVBAR
+ *************************************************/
+
+.container-header {
+  margin: 30px;
+}
+
+.cnt-nav {
+  display: flex;
+  padding: 20px;
+  background-color: #fb4a5b;
+  border-radius: 100px;
+  margin: 30px 30px;
+}
+
+.cnt-nav h1 {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 37px;
+}
+
+/*************************************************
+   HOMEPAGE con card viaggi
+ *************************************************/
+
+.cards-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  row-gap: 60px;
+  justify-content: center;
+}
+
+.card-viaggio {
+  cursor: pointer;
+  width: 200px;
+  height: 180px;
+  border-radius: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.data-viaggio {
+  color: gray;
+}
+
+h2 {
+  margin: 4px 0;
+}
+
+/*************************************************
+   SEARCHBAR 
+ *************************************************/
+.searchbar {
+  margin: 10px;
+  align-self: self-end;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #fb4a5b;
+  outline: none;
+}
+
+/*************************************************
+   SINGOLO VIAGGIO 
+ *************************************************/
+
+.main-container-sv {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+.viaggio-header h1 {
+  margin: 20px;
+}
+
+.viaggio-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 10px;
+}
+
+.viaggio-date {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  border-bottom: 1px solid #c8caca;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+/*************************************************
+   CARD PARTECIPANTI 
+ *************************************************/
+.partecipanti-section {
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px solid #c8caca;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+
+  h2 {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+.partecipanti-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 70px 25px;
+}
+
+.partecipante-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    margin-bottom: 8px;
+  }
+}
+
+.partecipante-card {
+  border: 1px solid #c8caca;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  width: 280px;
+  border-radius: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+  flex: 1 1 calc(33.333% - 30px);
+  /* larghezza per 3 card considerando gap */
+  max-width: calc(33.333% - 30px);
+}
+
+.img-partecipante {
+  width: 60px;
+  background-color: gainsboro;
+  border-radius: 50px;
+  margin-bottom: 4px;
+}
+
+hr {
+  color: #c8caca;
+}
+
+.open-closed {
+  color: #fb4a5b;
+}
+
+.partecipante-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: auto;
+
+  p {
+    padding: 0 10px;
+  }
+}
+
+.partecipante-card.active {
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+  background-color: #dcdcdc;
+}
+
+.partecipante-card:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+  background-color: #dcdcdc;
+}
+
+
+
+@media (max-width: 1024px) {
+  .partecipante-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .cnt-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .searchbar {
+    margin: 10px;
+    align-self: center;
+  }
+}
+
+/* Telefono: 1 card per riga */
+@media (max-width: 767px) {
+  .partecipante-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+
+
+}
